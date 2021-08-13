@@ -1,0 +1,52 @@
+a{
+    display: inline;
+    font-family: 'roboto';
+
+    margin: 50px;
+    color: red;
+}
+nav{
+    width: 60%;
+    margin: auto; 
+    
+}
+h1{
+    font-family: 'cursive';
+    color: blue;
+    text-align: center;
+}
+p{
+    font-family: monospace;
+    text-align: center;
+    background-color:white;
+    text-indent: 50px;
+    letter-spacing: 3px;
+    border: black;
+}
+
+th{
+    height: 70px;
+}
+input[type=text]{
+    width: 100px;
+    padding: 12px 20px;
+    display: inline-block;
+}
+input[type=submite]{
+    background-color: burlywood;
+    width: 100px;
+    cursor: pointer;
+    border: none;
+}
+body{
+    background-image: url('https://i.pinimg.com/originals/3d/32/a7/3d32a7b00ba0ccabf80b6a78cb36163a.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h2{
+    font-family: "cursive";
+    color: brown;
+    font-style: oblique;
+    text-align: center;
+    size: 400px;
+}
