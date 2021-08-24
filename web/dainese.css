@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+  }
+   
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color:black;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(https://www.wallpapertip.com/wmimgs/22-228296_dainese.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .shopping-cart {
+    width: 750px;
+    height: 423px;
+    margin: 80px auto;
+    background-image: url(https://wallpapercave.com/wp/wp3617482.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+    border-radius: 6px;
+   
+    display: flex;
+    flex-direction: column;
+  }
+  .title {
+    height: 60px;
+    border-bottom: 1px solid #E1E8EE;
+    padding: 20px 30px;
+    color: #5E6977;
+    font-size: 18px;
+    font-weight: 400;
+  }
+   
+  .item {
+    padding:  10px;
+    height: 120px;
+    display: flex;
+  }
+   
+  .item:nth-child(3) {
+    border-top:  1px solid #E1E8EE;
+    border-bottom:  1px solid #E1E8EE;
+  }
+  .buttons {
+    position: relative;
+    padding-top: 30px;
+    margin-right: 60px;
+  }
+  .delete-btn,
+  
+  .delete-btn {
+    width: 18px;
+    height: 17px;
+    background: url(&amp;quot;delete-icn.svg&amp;quot;) no-repeat center;
+  }
+   
+  
+  .is-active {
+    animation-name: animate;
+    animation-duration: .8s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(28);
+    animation-fill-mode: forwards;
+  }
+   
+  @keyframes animate {
+    0%   { background-position: left;  }
+    50%  { background-position: right; }
+    100% { background-position: right; }
+  }
+  .image {
+    margin-right: -400px;
+    display: flex;
+
+    
+  }
+   
+
+  .description {
+    padding-top: 10px;
+    margin-right: 60px;
+    width: 115px;
+  }
+   
+  .description span {
+    display: block;
+    font-size: 13px;
+    color: black;
+    font-weight: bolder;
+    
+  }
+   
+  .description span:first-child {
+    margin-bottom: 5px;
+  }
+  .description span:last-child {
+    font-weight: 300;
+    margin-top: 8px;
+    color: #86939E;
+  }
+  .quantity {
+    padding-top: 20px;
+    margin-right: 60px;
+    margin-left: 20px;
+    
+  }
+  .quantity input {
+    -webkit-appearance: none;
+    text-align: center;
+    width: 32px;
+    font-size: 16px;
+    color: #43484D;
+    font-weight: 300;
+  }
+   
+  button[class*=btn] {
+    width: 30px;
+    height: 30px;
+    background-color: #E1E8EE;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+  }
+  .minus-btn img {
+    margin-bottom: 3px;
+  }
+  .number img {
+    margin-top: 2px;
+  }
+   
+  button:focus,
+  input:focus {
+    outline:0;
+  }
+  .cart-total-price {
+    width: 83px;
+    padding-top: 27px;
+    text-align: center;
+    font-size: 16px;
+    color: #43484D;
+    font-weight: 300;
+  }
+  @media (max-width: 800px) {
+    .shopping-cart {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+    }
+    .item {
+      height: auto;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .image img {
+      width: 100%;
+    }
+    
+    .quantity,
+    .description {
+      width: 100%;
+      text-align: center;
+      margin: 6px 0;
+    }
+    .buttons {
+      margin-right: 20px;
+    }
+  }
+.remove button{
+    background-color: rgb(235, 46, 46);
+    color:white;
+    float: none;
+    margin: 35.5%;
+    margin-left: -5%;
+    
+}
+.counter{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color:white;
+  background-color:transparent;
+
+
+}
+.receipt{
+  font-size: 35px;
+  padding: 15px 15px 25px;
+  font-weight: 700;
+}
+.total{
+  display: flex;
+  justify-content: space-evenly;
+  border-top: thin solid #0F1111;
+  padding-top:16px ;
+  width: 500px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: rgb(21, 12, 12);
+
+}

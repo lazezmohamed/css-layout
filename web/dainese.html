@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dainese Store</title>
+    <link rel="stylesheet" href="dainese.css">
+</head>
+<body> 
+  
+    <div class="shopping-cart">
+        <!-- Title -->
+        <div class="title">
+          Shopping Bag
+        </div>
+       
+        <!-- Product #1 -->
+        <div class="item">
+          <div class="buttons">
+            <span class="delete-btn"></span>
+           
+          </div>
+          
+          <div class="image">
+            <img src="https://dainese-cdn.thron.com/delivery/public/image/dainese/c8cca434-f327-4c54-9380-13b575c09b70/ramfdh/std/615x615/super-speed-3-leather.jpg" alt="" />
+          </div>
+       
+          <div class="description">
+            <span>Dainese Jackets</span>
+            <span>Dainese Super Speed 3 Perforated Jacket</span>
+            <span>Black & White</span>
+          </div>
+       
+          <div class="quantity">
+            
+              
+              <input onclick="flipFlops(event)" type="number" value="1" min="1">
+              
+            
+          </div>
+       
+          <div class="cart-total-price">$799</div>
+          <div class="remove">
+            <button onclick="remove(event)">Remove</button>
+          </div>
+        </div>
+       
+        <!-- Product #2 -->
+        <div class="item">
+          <div class="buttons">
+            <span class="delete-btn"></span>
+            
+          </div>
+       
+          <div class="image">
+            <img src="https://dainese-cdn.thron.com/delivery/public/image/dainese/a976c7a5-0488-4cca-8fb1-7bc5b6a3dbea/ramfdh/std/615x615/d-mach-backpack.jpg" alt=""/>
+          </div>
+       
+          <div class="description">
+            <span>Dainese Bags & Backpacks</span>
+            <span>Dainese D-Mach Backpack</span>
+            <span>Black</span>
+          </div>
+       
+          <div class="quantity">
+            
+              
+              <input onclick="bigMAc(event)" type="number" value="1" min="1" >
+            
+             
+            
+          </div>
+       
+          <div class="cart-total-price">$200</div>
+          <div class="remove">
+            <button onclick="remove(event)">Remove</button>
+          </div>
+        </div>
+       
+        <!-- Product #3 -->
+        <div class="item">
+          <div class="buttons">
+            <span class="delete-btn"></span>
+            
+          </div>
+       
+          <div class="image">
+            <img src="https://dainese-cdn.thron.com/delivery/public/image/dainese/c78e1cb1-667e-4c69-abd9-82fa549c4737/ramfdh/std/615x615/delta-3-leather-pants.jpg" alt="" />
+          </div>
+       
+          <div class="description">
+            <span>Dainese Pants</span>
+            <span>Dainese Delta 3 Perforated Leather Pants</span>
+            <span>Black</span>
+          </div>
+       
+          <div class="quantity">
+            
+              
+            
+              <input onclick="fighter(event)" type="number" value="1" min="1" >
+              
+            
+          </div>
+       
+          <div class="cart-total-price">$600</div>
+          <div class="remove">
+          <button onclick="remove(event)">Remove</button>
+        </div>
+          
+        </div>
+        <section class="counter">
+          <a name="cart"></a> 
+           <h1 class="receipt">your receipt</h1>
+          <h3 id="stuff" >stuff</h3>
+          <div class="total">
+          <h2 style="margin: auto; " >total </h2>
+          <h2 style="margin: auto; " id="totalsum"></h2> <h2 style="margin: auto; margin-left: -80px;"> $</h2>
+          </div>
+    </section>
+      </div>
+      
+  
+  
+</body>
+<script src="dainese.js"></script>
+</html>
